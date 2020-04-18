@@ -5,7 +5,7 @@
 }
 
 body {
-  cursor: url(design/cursor.png), auto;
+  /* cursor: url(design/cursor.png), auto; */
   display: flex;
   margin-top: 5%;
   flex-direction: column;
@@ -18,7 +18,7 @@ body {
 
 html {
   padding: 0;
-  cursor: url(design/cursor.png), auto;
+  /* cursor: url(design/cursor.png), auto; */
   margin: 0;
   flex: 1;
 }
