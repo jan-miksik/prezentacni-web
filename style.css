@@ -1,0 +1,144 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  cursor: url(design/cursor.png), auto;
+  display: flex;
+  margin-top: 5%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  flex: 1;
+  background-color: white;
+}
+
+html {
+  padding: 0;
+  cursor: url(design/cursor.png), auto;
+  margin: 0;
+  flex: 1;
+}
+
+nav {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  font-size: 22px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* ::selection {
+  color: white;
+  background: black;
+} */
+
+main {
+  display: flex;
+  margin-top: 20px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.active {
+  color: turquoise;
+  text-decoration: underline;
+}
+
+a:active,
+a:focus {
+  color: turquoise;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.head-title {
+  text-decoration: underline;
+  margin: 7px;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.cv-pdf {
+  width: 730px;
+  height: 1300px;
+}
+
+@media only screen and (max-width: 850px) {
+  nav {
+    font-size: 17px;
+  }
+
+  .head-title {
+    font-size: 35px;
+  }
+
+  .cv-pdf {
+    width: 500px;
+    height: 900px;
+    overflow: auto;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  nav {
+    font-size: 17px;
+    flex-direction: column;
+  }
+
+  .head-title {
+    font-size: 25px;
+  }
+
+  .cv-pdf {
+    width: 350px;
+    height: 600px;
+    overflow: auto;
+  }
+}
+
+.blog-link {
+  font-size: 25px;
+  margin-top: 50px;
+}
+.download-link {
+  margin-top: 50px;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* width
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+/* ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0px grey;
+  border-radius: 0px;
+} */
+
+/* Handle */
+/* ::-webkit-scrollbar-thumb {
+  background: rgba(153, 149, 149, 0.198);
+  border-radius: 0px;
+} */
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+  background: #7c7c7c1e;
+} */
