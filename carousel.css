@@ -1,6 +1,7 @@
 .carousel {
   position: relative;
-  width: 730px;
+  width: 830px;
+  /* background-color: yellow; */
   margin-top: 20px;
 }
 
@@ -12,13 +13,13 @@
   align-items: center;
   /* justify-content: center; */
   transition: width 0.4s;
-  height: 500px;
+  height: 650px;
 }
 
 .carousel-img {
   object-fit: contain;
-  max-width: 730px;
-  max-height: 350px;
+  max-width: 830px;
+  max-height: 450px;
   margin-bottom: 20px;
 }
 
@@ -60,6 +61,10 @@
 .carousel-arrow-icon-right {
   margin-left: 7px;
   margin-top: 2px;
+}
+
+.carousels-wrap {
+  flex-direction: column;
 }
 
 @media only screen and (max-width: 850px) {
