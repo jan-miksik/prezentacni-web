@@ -17,10 +17,7 @@ body {
 }
 
 html {
-  padding: 0;
-  /* cursor: url(design/cursor.png), auto; */
-  margin: 0;
-  flex: 1;
+  /* font-family: 'Times New Roman', Times, serif; */
 }
 
 nav {
@@ -74,6 +71,7 @@ a:hover {
 
 .head-title {
   text-decoration: underline;
+  font-family: 'Times New Roman', Times, serif;
   margin: 7px;
   font-size: 57px;
   text-transform: uppercase;
@@ -84,7 +82,7 @@ a:hover {
   height: 1300px;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 925px) {
   nav {
     font-size: 17px;
   }
