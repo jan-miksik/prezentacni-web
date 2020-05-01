@@ -8,8 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" type="text/css" href="carousel.css" />
+    <link rel="stylesheet" type="text/css" href="carousel3.css" />
     <link rel="stylesheet" type="text/css" href="carousel2.css" />
+    <link rel="stylesheet" type="text/css" href="carousel.css" />
   </head>
 
   <body>
@@ -27,105 +28,210 @@
     </header>
 
     <main>
-      <div class="carousels-wrap">
         <section class="carousel">
-          <div class="nav nav-left">
-            <img src="design/left.png" height="35" alt="left" />
+          <div style="text-align:center" class="dots">
+            <span class="dot3" onclick="currentSlide3(1)"></span>
+            <span class="dot3" onclick="currentSlide3(2)"></span>
+            <span class="dot3" onclick="currentSlide3(3)"></span>
           </div>
-
-          <div class="carousel-content">
-            <div class="slide">
-              <img
-                src="images/installation.png"
-                alt="installation"
-                class="carousel-img"
-              />
+         
+          
+          <div class="slideshow-container">
+            <div class="prev"  onclick="plusSlides3(-1)">
+              <img src="design/left.png" height="35" alt="left" />
+            </div>
+          <div class="slides3 fade">
+              <img src="images/installation.png" alt="work" class="carousel-img" />
               <div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+              </div>
+            </div>
+            
+          <div class="slides3 fade">
+              <img src="images/installation2.jpg" alt="work" class="carousel-img" />
+              <div>
+                2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+  
+            <div class="slides3 fade">
+              <img src="images/installation3.jpg" alt="work" class="carousel-img" />
+              <div>
+                3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+            
+            <div class="next"  onclick="plusSlides3(1)">
+              <img src="design/right.png" height="35" alt="right" />
+            </div>
+          </div>
+          
+        </section>
+
+        <div class='spacer50'></div>
+
+        <section class="carousel">
+          <div style="text-align:center" class="dots">
+            <span class="dot2" onclick="currentSlide2(1)"></span>
+            <span class="dot2" onclick="currentSlide2(2)"></span>
+            <span class="dot2" onclick="currentSlide2(3)"></span>
+            <span class="dot2" onclick="currentSlide2(4)"></span>
+            <span class="dot2" onclick="currentSlide2(5)"></span>
+            <span class="dot2" onclick="currentSlide2(6)"></span>
+            <span class="dot2" onclick="currentSlide2(7)"></span>
+          </div>
+         
+          
+          <div class="slideshow-container">
+            <div class="prev"  onclick="plusSlides2(-1)">
+              <img src="design/left.png" height="35" alt="left" />
+            </div>
+          <div class="slides2 fade">
+              <img src="images/work10.jpeg" alt="work" class="carousel-img" />
+              <div>
+                1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+              </div>
+            </div>
+            
+          <div class="slides2 fade">
+              <img src="images/work2.jpeg" alt="work" class="carousel-img" />
+              <div>
+                2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+  
+            <div class="slides2 fade">
+              <img src="images/work3.png" alt="work" class="carousel-img" />
+              <div>
+                3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </div>
             </div>
 
-            <div class="slide">
-              <img
-                src="images/installation2.jpg"
-                alt="installation"
-                class="carousel-img"
-              />
+            <div class="slides2 fade">
+              <img src="images/work4.jpeg" alt="work" class="carousel-img" />
               <div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit
-              </div>
-            </div>
-            <div class="slide">
-              <img
-                src="images/installation3.jpg"
-                alt="installation"
-                class="carousel-img"
-              />
-              <div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </div>
-            </div>
-          </div>
-
-          <div class="nav nav-right">
-            <img src="design/right.png" height="35" alt="right" />
-          </div>
-        </section>
-
-        <section class="carousel2">
-          <div class="nav2 nav-left2">
-            <img src="design/left.png" height="35" alt="left" />
-          </div>
-
-          <div class="carousel-content2">
-            <div class="slide2">
-              <img
-                src="images/work.png"
-                alt="installation"
-                class="carousel-img"
-              />
-              <div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </div>
             </div>
 
-            <div class="slide2">
-              <img
-                src="images/work2.jpeg"
-                alt="installation"
-                class="carousel-img"
-              />
+            <div class="slides2 fade">
+              <img src="images/work5.jpeg" alt="work" class="carousel-img" />
               <div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </div>
             </div>
-            <div class="slide2">
-              <img
-                src="images/work3.png"
-                alt="installation"
-                class="carousel-img"
-              />
+
+            <div class="slides2 fade">
+              <img src="images/work6.jpeg" alt="work" class="carousel-img" />
               <div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                6 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+
+            <div class="slides2 fade">
+              <img src="images/work7.jpeg" alt="work" class="carousel-img" />
+              <div>
+                7 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+            
+            <div class="next"  onclick="plusSlides2(1)">
+              <img src="design/right.png" height="35" alt="right" />
+            </div>
+          </div>
+          
+        </section>
+
+        <div class='spacer50'></div>
+
+        <section class="carousel">
+          <div style="text-align:center" class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+         
+          
+          <div class="slideshow-container">
+            <div class="prev"  onclick="plusSlides(-1)">
+              <img src="design/left.png" height="35" alt="left" />
+            </div>
+          <div class="slides fade">
+              <img src="images/installation.png" alt="work" class="carousel-img" />
+              <div>
+                1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
               </div>
             </div>
+            
+          <div class="slides fade">
+              <img src="images/installation2.jpg" alt="work" class="carousel-img" />
+              <div>
+                2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+  
+            <div class="slides fade">
+              <img src="images/installation3.jpg" alt="work" class="carousel-img" />
+              <div>
+                3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+            
+            <div class="next"  onclick="plusSlides(1)">
+              <img src="design/right.png" height="35" alt="right" />
+            </div>
           </div>
-
-          <div class="nav2 nav-right2">
-            <img src="design/right.png" height="35" alt="right" />
-          </div>
+          
         </section>
-      </div>
+
+        <div class='spacer50'></div>
+
     </main>
   </body>
+  <script src="carousel3.js"></script>
   <script src="carousel2.js"></script>
   <script src="carousel.js"></script>
 </html>

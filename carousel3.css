@@ -1,4 +1,4 @@
-.dot2 {
+.dot3 {
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -9,11 +9,11 @@
     /* transition: background-color 0.6s ease; */
   }
 
-.dot2:hover {
+.dot3:hover {
     background-color: gray;
 }
 
-.slides2 {
+.slides3 {
     display: none;
     min-height: 600px;
     width: 831px;
@@ -24,13 +24,13 @@
 }
 
 @media only screen and (max-width: 925px) {
-    .slides2 {
+    .slides3 {
       width: 500px;
     }
   }
   
 @media only screen and (max-width: 600px) {
-    .slides2 {
+    .slides3 {
       width: 320px;
     }
   } 

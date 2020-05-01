@@ -1,76 +1,108 @@
-.carousel {
-  position: relative;
-  width: 830px;
-  /* background-color: yellow; */
-  margin-top: 20px;
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+    width: 831px;
+    position: relative;
+    margin: auto;
+    min-height: 600px;
 }
 
-.carousel-content {
+/* Hide the images by default */
+.slides {
+  display: none;
+  min-height: 600px;
+  width: 831px;
   position: relative;
-  overflow: hidden;
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  /* justify-content: center; */
-  transition: width 0.4s;
-  height: 650px;
+    align-items: center;
+    animation-fill-mode: forwards;
 }
 
 .carousel-img {
-  object-fit: contain;
-  max-width: 830px;
-  max-height: 450px;
   margin-bottom: 20px;
+  max-width: 100%;
+  max-height: 450px;
 }
 
-.slide {
-  position: absolute;
-  z-index: 1;
-  transition: left 0.4s cubic-bezier(0.47, 0.13, 0.15, 0.89);
-  flex-direction: column;
-  display: flex;
-}
-
-.slide-1 {
-  background-color: blue;
-}
-
-.slide-2 {
-  background-color: green;
-}
-
-.nav {
-  position: absolute;
-  top: 40%;
+/* Next & previous buttons */
+.prev, .next {
   cursor: pointer;
+  position: absolute;
+  top: 250px;
+  z-index: 100;
+  user-select: none;
 }
 
-.nav-left {
-  left: -45px;
+/* Position the "next button" to the right */
+.next {
+  right: -50px;
 }
 
-.nav-right {
-  right: -45px;
+.prev {
+    left: -50px;
 }
 
-.carousel-arrow-icon-left {
-  margin-left: 5px;
-  margin-top: 2px;
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
 }
 
-.carousel-arrow-icon-right {
-  margin-left: 7px;
-  margin-top: 2px;
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  /* transition: background-color 0.6s ease; */
 }
 
-.carousels-wrap {
-  flex-direction: column;
+.dots {
+  margin: 15px;
+}
+
+.active-dot {
+  background-color: black;
+}
+
+.dot:hover {
+  background-color: gray;
+}
+
+/* Fading animation */
+.fade {
+  /* -webkit-animation-name: fade; */
+  -webkit-animation-duration: 1s;
+  /* animation-name: fade; */
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .7}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .7}
+  to {opacity: 1}
 }
 
 @media only screen and (max-width: 925px) {
-  .carousel {
+
+  .slideshow-container {
     width: 500px;
-    margin-top: 10px;
+  }
+  .slides {
+    width: 500px;
   }
 }
 
@@ -79,35 +111,26 @@
     margin-top: 0px;
   }
 
-  .carousel-content {
-    height: 900px;
-  }
-
   .carousel-img {
-    object-fit: contain;
-    max-width: 320px;
-    max-height: 270px;
-    margin-bottom: 20px;
+    margin-top: 55px;
   }
 
-  .carousel-img {
-    margin-top: 40px;
-  }
-
-  .carousel {
+  .slideshow-container {
     width: 320px;
   }
-  .nav {
-    position: absolute;
-    z-index: 10;
-    top: 0;
-    cursor: pointer;
-  }
-  .nav-left {
-    left: 0px;
+  .slides {
+    width: 320px;
   }
 
-  .nav-right {
-    right: 0px;
+  .prev, .next {
+    top: 0;
   }
-}
+
+  .prev {
+    left: 0;
+  }
+
+  .next {
+    right: 0;
+  }
+} 
